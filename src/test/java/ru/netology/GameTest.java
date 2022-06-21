@@ -33,18 +33,6 @@ public class GameTest {
     @Test
     void secondTest() {
         Collection<Player> players = new ArrayList<>();
-        game.register(playerName1);
-        game.round("Alex", "Bill");
-
-        int actual = game.round("Alex", "Bill");
-        int expected = 2;
-
-        Assertions.assertEquals(expected, actual);
-    }
-
-    @Test
-    void thirdTest() {
-        Collection<Player> players = new ArrayList<>();
         game.register(playerName2);
         game.register(playerName5);
         game.round("Bill", "Nik");
@@ -56,7 +44,7 @@ public class GameTest {
     }
 
     @Test
-    void fourthTest() {
+    void thirdTest() {
         Collection<Player> players = new ArrayList<>();
         game.register(playerName4);
         game.register(playerName3);
@@ -69,25 +57,13 @@ public class GameTest {
     }
 
     @Test
-    void fifthTest() {
+    void fourthTest() {
         Collection<Player> players = new ArrayList<>();
         game.register(playerName6);
         game.register(playerName3);
         game.round("Leo", "Anna");
 
         int actual = game.round("Leo", "Anna");
-        int expected = 2;
-
-        Assertions.assertEquals(expected, actual);
-    }
-
-    @Test
-    void sixthTest() {
-        Collection<Player> players = new ArrayList<>();
-        game.register(playerName2);
-        game.round("Alex", "Bill");
-
-        int actual = game.round("Alex", "Bill");
         int expected = 2;
 
         Assertions.assertEquals(expected, actual);
