@@ -29,6 +29,7 @@ public class GameTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void secondTest() {
         Collection<Player> players = new ArrayList<>();
