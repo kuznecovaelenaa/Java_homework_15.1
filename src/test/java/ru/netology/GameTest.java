@@ -79,4 +79,16 @@ public class GameTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    void sixthTest() {
+        Collection<Player> players = new ArrayList<>();
+        game.register(playerName2);
+        game.round("Alex", "Bill");
+
+        int actual = game.round("Alex", "Bill");
+        int expected = 2;
+
+        Assertions.assertEquals(expected, actual);
+    }
 }

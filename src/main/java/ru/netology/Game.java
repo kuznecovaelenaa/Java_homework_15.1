@@ -47,8 +47,4 @@ public class Game {
             return 0;
         }
     }
-
-    public Collection<Player> findAll() {
-        return players;
-    }
 }
